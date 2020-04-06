@@ -46,11 +46,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
             cursor("/assets/eraser.png");
             brushIcon.style.backgroundColor = `rgb(${rubber.color.join(',')})`
             colorIcon.style.backgroundColor = `rgb(${rubber.color.join(',')})`
+            brushIcon.style.width = `${rubber.width}px`
+            brushIcon.style.height = `${rubber.width}px`
             rubberButton.classList.add('active')
         } else {
             cursor("/assets/pencil.png");
             colorIcon.style.backgroundColor = `rgb(${brush.color.join(',')})`
             brushIcon.style.backgroundColor = `rgb(0, 0, 0)`
+            brushIcon.style.width = `${brush.width}px`
+            brushIcon.style.height = `${brush.width}px`
             rubberButton.classList.remove('active')
 
         }
